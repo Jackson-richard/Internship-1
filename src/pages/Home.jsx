@@ -80,7 +80,7 @@ export default function Home() {
             </Helmet>
 
             <div className="animate-fade-in">
-                {/* HERO SECTION */}
+         
                 <section className="hero-section">
                     <div className="hero-bg-shapes">
                         <div className="shape-1"></div>
@@ -105,7 +105,6 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* SERVICES OVERVIEW */}
                 <section className="section section-bg-light" id="services">
                     <div className="container">
                         <div className="section-header">
@@ -131,7 +130,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* STATS SECTION (CMS PLACEHOLDERS) */}
+                
                 <section className="stats-section">
                     <div className="container">
                         <div className="stats-grid">
@@ -155,7 +154,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* WHY CHOOSE US */}
+                
                 <section className="section section-bg-light">
                     <div className="container">
                         <div className="value-grid">
@@ -197,7 +196,6 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* TESTIMONIALS PLACEHOLDER */}
                 <section className="section section-bg-light" style={{ backgroundColor: '#f1f5f9' }}>
                     <div className="container">
                         <div className="section-header">
@@ -225,7 +223,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* CTA SECTION */}
+               
                 <section className="cta-section">
                     <div className="container">
                         <div className="cta-content">

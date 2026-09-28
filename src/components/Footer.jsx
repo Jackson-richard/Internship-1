@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer section-bg-dark">
             <div className="container">
                 <div className="footer-grid">
-                    {/* Company Info */}
+                    
                     <div className="footer-col brand-col">
                         <h3 className="footer-logo">KK <span>International</span></h3>
                         <p className="footer-desc">
@@ -26,7 +26,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Quick Links */}
+                    
                     <div className="footer-col">
                         <h4 className="footer-heading">Quick Links</h4>
                         <ul className="footer-links">
@@ -38,7 +38,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Services */}
+                    
                     <div className="footer-col">
                         <h4 className="footer-heading">Our Services</h4>
                         <ul className="footer-links">
@@ -50,7 +50,6 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Contact */}
                     <div className="footer-col contact-col">
                         <h4 className="footer-heading">Contact Us</h4>
                         <ul className="footer-contact-list">

@@ -25,12 +25,20 @@
 @media (max-width: 991px) {
     .service-grid-2col {
         grid-template-columns: 1fr;
+        gap: 32px;
     }
 }
 
 .service-intro {
     position: sticky;
     top: 120px;
+}
+
+@media (max-width: 991px) {
+    .service-intro {
+        position: static;
+        margin-bottom: 32px;
+    }
 }
 
 .service-intro-icon {
@@ -48,22 +56,28 @@
 .sub-services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: var(--space-6);
+    gap: 24px;
 }
 
 @media (max-width: 639px) {
     .sub-services-grid {
         grid-template-columns: 1fr;
+        gap: 24px;
     }
 }
 
 .sub-service-card {
     background-color: var(--bg-card);
-    padding: var(--space-6);
+    padding: 24px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     border: 1px solid rgba(0, 0, 0, 0.05);
     transition: all var(--transition-fast);
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .sub-service-card:hover {
@@ -72,16 +86,22 @@
     border-color: var(--secondary);
 }
 
+/* Icon container for sub services */
+.card-icon-container {
+    margin-bottom: 20px;
+    display: flex;
+}
+
 .sub-service-card h4 {
     font-size: 1.1rem;
-    margin-bottom: var(--space-2);
+    margin-bottom: 12px;
     color: var(--primary);
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
+    line-height: 1.4;
 }
 
 .sub-service-card p {
     color: var(--text-muted);
     font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
 }

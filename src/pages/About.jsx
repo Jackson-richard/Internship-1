@@ -16,7 +16,10 @@ export default function About() {
                     <div className="container">
                         <h1 className="h1">About KK International</h1>
                         <p className="text-light" style={{ maxWidth: '700px', margin: '1rem auto 0', fontSize: '1.2rem', color: 'var(--text-light)' }}>
-                            Operating at the intersection of global business and digital innovation.
+                            Digital innovation, at the intersection of global business.
+                        </p>
+                        <p className="text-light" style={{ maxWidth: '700px', margin: '1rem auto 0', fontSize: '1.1rem', color: 'var(--text-light)' }}>
+                            Trusted IT company in Chennai - building a digital landscape where businesses harness technology to thrive.
                         </p>
                     </div>
                 </section>

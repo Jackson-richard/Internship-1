@@ -14,7 +14,7 @@ export default function Contact() {
         message: ''
     });
 
-    const [formStatus, setFormStatus] = useState(null); // 'success', 'error', null
+    const [formStatus, setFormStatus] = useState(null); 
     const [errors, setErrors] = useState({});
 
     const validate = () => {
@@ -32,7 +32,7 @@ export default function Contact() {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
-        // Clear error on type
+        
         if (errors[name]) setErrors(prev => ({ ...prev, [name]: '' }));
     };
 
@@ -41,8 +41,7 @@ export default function Contact() {
         setFormStatus(null);
 
         if (validate()) {
-            // Prepare backend integration here
-            // For now, simulate network request
+            
             setFormStatus('loading');
             setTimeout(() => {
                 setFormStatus('success');
@@ -77,7 +76,6 @@ export default function Contact() {
                     <div className="container">
                         <div className="contact-grid">
 
-                            {/* Contact Information */}
                             <div className="contact-info-cards">
                                 <div className="contact-card">
                                     <div className="contact-card-icon"><User size={24} /></div>
@@ -126,7 +124,7 @@ export default function Contact() {
                                 </div>
                             </div>
 
-                            {/* Form */}
+                         
                             <div className="contact-form-container">
                                 <h3 className="h3">Request a Quote</h3>
                                 <p className="text-muted" style={{ marginBottom: '2rem' }}>Fill out the form below and our team will get back to you promptly.</p>
@@ -203,7 +201,7 @@ export default function Contact() {
                     </div>
                 </section>
 
-                {/* Map Section */}
+               
                 <section className="map-section">
                     <div className="container">
                         <div className="map-container">
