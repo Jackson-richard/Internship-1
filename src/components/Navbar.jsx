@@ -31,7 +31,7 @@ const Navbar = () => {
         <header className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
             <div className="container navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center' }}>
-                    <img src="/assets/kk-logo.png" alt="KK International Logo" style={{ height: 'auto', maxHeight: '44px', width: 'auto', objectFit: 'contain' }} />
+                    <img src="/assets/kk-international-logo.png" alt="KK International Logo" style={{ height: 'auto', maxHeight: '44px', width: 'auto', objectFit: 'contain' }} />
                 </Link>
 
                 {/* Desktop Menu */}
