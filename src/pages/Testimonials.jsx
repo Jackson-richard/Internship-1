@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Quote } from 'lucide-react';
 
@@ -77,9 +78,9 @@ export default function Testimonials() {
                             <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
                                 Are you ready to see how our targeted technology strategy and tailored solutions can impact your business?
                             </p>
-                            <a href="/contact" className="btn btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)' }}>
+                            <Link to="/contact" className="btn btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)' }}>
                                 Get in touch today
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </section>

@@ -14,7 +14,7 @@ export default function Contact() {
         message: ''
     });
 
-    const [formStatus, setFormStatus] = useState(null); 
+    const [formStatus, setFormStatus] = useState(null);
     const [errors, setErrors] = useState({});
 
     const validate = () => {
@@ -32,7 +32,7 @@ export default function Contact() {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
-        
+
         if (errors[name]) setErrors(prev => ({ ...prev, [name]: '' }));
     };
 
@@ -41,7 +41,7 @@ export default function Contact() {
         setFormStatus(null);
 
         if (validate()) {
-            
+
             setFormStatus('loading');
             setTimeout(() => {
                 setFormStatus('success');
@@ -98,7 +98,18 @@ export default function Contact() {
                                     <div className="contact-card-icon"><Mail size={24} /></div>
                                     <div className="contact-card-content">
                                         <h4>Email</h4>
-                                        <a href="mailto:kkintl.org@gmail.com">kkintl.org@gmail.com</a>
+                                        <a
+                                            href="mailto:kkintl.org@gmail.com"
+                                            onClick={(e) => {
+                                                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                                                if (!isMobile) {
+                                                    e.preventDefault();
+                                                    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=kkintl.org@gmail.com", "_blank", "noopener,noreferrer");
+                                                }
+                                            }}
+                                        >
+                                            kkintl.org@gmail.com
+                                        </a>
                                     </div>
                                 </div>
 
@@ -124,7 +135,7 @@ export default function Contact() {
                                 </div>
                             </div>
 
-                         
+
                             <div className="contact-form-container">
                                 <h3 className="h3">Request a Quote</h3>
                                 <p className="text-muted" style={{ marginBottom: '2rem' }}>Fill out the form below and our team will get back to you promptly.</p>
@@ -201,7 +212,7 @@ export default function Contact() {
                     </div>
                 </section>
 
-               
+
                 <section className="map-section">
                     <div className="container">
                         <div className="map-container">
