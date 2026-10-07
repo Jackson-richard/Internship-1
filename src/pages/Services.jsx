@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
     Monitor, Smartphone, ShoppingCart, Megaphone, Package,
     Code, Layout, Globe, Lock, LineChart, Cpu,
-    Share2, Search, Mail, Scan, Box, BarChart3, Database
+    Share2, Search, Mail, Scan, Box, BarChart3, Database, TrendingUp
 } from 'lucide-react';
 import '../styles/services.css';
 
@@ -26,49 +26,88 @@ export default function Services() {
                     </div>
                 </section>
 
-                <section id="web-development" className="service-detail-section">
+                <section id="data-analytics" className="service-detail-section">
                     <div className="container">
                         <div className="service-grid-2col">
                             <div className="service-intro">
                                 <div className="service-intro-icon">
-                                    <Monitor size={32} />
+                                    <BarChart3 size={32} />
                                 </div>
-                                <h2 className="h2" style={{ marginBottom: '1rem' }}>Website Development</h2>
-                                <p className="text-muted" style={{ marginBottom: '1rem' }}>
-                                    KK International creates tailored websites aligned with brand identity, business goals, and target audience.
-                                </p>
+                                <h2 className="h2" style={{ marginBottom: '1rem' }}>DATA ANALYTICS</h2>
+                                <h3 className="h3" style={{ marginBottom: '1rem', color: 'var(--text-color)' }}>Data Analytics Services</h3>
                                 <p className="text-muted" style={{ marginBottom: '2rem' }}>
-                                    We focus on seamless user experience, custom solutions, business growth, and brand differentiation.
+                                    "Transform your data into actionable business insights with our comprehensive Data Analytics solutions. We help organizations collect, clean, analyse, and visualize data through interactive dashboards and reports, enabling smarter decision-making, improved operational efficiency, and sustainable business growth."
                                 </p>
-                                <img src="/assets/images/professional_business_environment.png" alt="Web Development" style={{ width: '100%', height: 'auto', borderRadius: 'var(--radius-lg)', objectFit: 'cover' }} />
+                                <img src="/assets/images/data_analytics_dashboard.png" alt="Data Analytics" style={{ width: '100%', height: 'auto', borderRadius: 'var(--radius-lg)', objectFit: 'cover' }} />
                             </div>
 
                             <div className="sub-services-grid">
                                 <div className="sub-service-card">
-                                    <div className="card-icon-container"><Code size={24} className="text-primary" /></div>
-                                    <h4>Custom Website Dev</h4>
-                                    <p>Fully bespoke websites built from the ground up for specific requirements.</p>
+                                    <div className="card-icon-container"><Database size={24} className="text-primary" /></div>
+                                    <h4>Data Analytics for Political Campaigns in India</h4>
+                                    <p>Political Data Analytics is a process of predicting the sample data taken from a survey to the most accurate output of the voters including their issues. We use these sample data and predict to form different strategies for your Political Parties/Candidates in your region like Voter Profiling, Issue analysis, and other strategies that increase your chances of winning the election.</p>
                                 </div>
                                 <div className="sub-service-card">
-                                    <div className="card-icon-container"><Layout size={24} className="text-primary" /></div>
-                                    <h4>Business Websites</h4>
-                                    <p>Professional corporate sites that establish authority and trust.</p>
+                                    <div className="card-icon-container"><Box size={24} className="text-primary" /></div>
+                                    <h4>Inventory Analytics</h4>
+                                    <p>Optimize your inventory with data-driven insights. We analyse stock levels, demand patterns, and inventory performance to reduce costs, prevent stock shortages, minimize overstocking, and improve supply chain efficiency.</p>
                                 </div>
                                 <div className="sub-service-card">
-                                    <div className="card-icon-container"><Globe size={24} className="text-primary" /></div>
-                                    <h4>Informational Websites</h4>
-                                    <p>Clear, accessible platforms for information dissemination.</p>
+                                    <div className="card-icon-container"><LineChart size={24} className="text-primary" /></div>
+                                    <h4>LIC Agent CRM Dashboard</h4>
+                                    <p>Streamline your insurance business with a centralized CRM dashboard designed for LIC agents. Efficiently manage customer details, policy renewals, leads, follow-ups, and performance insights to enhance productivity and deliver better client service.</p>
                                 </div>
                                 <div className="sub-service-card">
-                                    <div className="card-icon-container"><ShoppingCart size={24} className="text-primary" /></div>
-                                    <h4>E-Commerce Websites</h4>
-                                    <p>High-conversion storefronts integrated with modern web frameworks.</p>
+                                    <div className="card-icon-container"><TrendingUp size={24} className="text-primary" /></div>
+                                    <h4>Product Trending Analysis</h4>
+                                    <p>Stay ahead of market demand with intelligent product trend analysis. Our analytics solutions identify high-demand products, track changing customer preferences, monitor sales trends, and uncover emerging market opportunities. By analyzing real-time sales data and consumer behavior, we help businesses optimize inventory, improve product planning, and make data-driven decisions that increase sales and maximize profitability.</p>
                                 </div>
-                                <div className="sub-service-card">
-                                    <div className="card-icon-container"><Cpu size={24} className="text-primary" /></div>
-                                    <h4>Custom Web Solutions</h4>
-                                    <p>Complex web portals, internal tools, and specialized web endpoints.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="erp-sap" className="service-detail-section" style={{ backgroundColor: 'var(--bg-card)' }}>
+                    <div className="container">
+                        <style>{`
+                            .erp-main-grid {
+                                display: grid;
+                                grid-template-columns: 1.2fr 1fr;
+                                gap: clamp(2rem, 5vw, 4rem);
+                                align-items: center;
+                                margin-bottom: 3rem;
+                            }
+                            @media (max-width: 991px) {
+                                .erp-main-grid {
+                                    grid-template-columns: 1fr;
+                                }
+                            }
+                        `}</style>
+                        <div className="erp-main-grid">
+                            <div className="service-intro" style={{ position: 'static', marginBottom: 0 }}>
+                                <div className="service-intro-icon">
+                                    <Database size={32} />
                                 </div>
+                                <h2 className="h2" style={{ marginBottom: '1rem' }}>ERP / SAP Business Model</h2>
+                                <p className="text-muted" style={{ marginBottom: '2rem' }}>
+                                    Comprehensive enterprise resource planning solutions tailored to streamline operations, enhance cross-departmental data flow, and optimize core business processes.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/assets/images/erp_sap_system.png" alt="ERP SAP Business Model" style={{ width: '100%', height: 'auto', borderRadius: 'var(--radius-lg)', objectFit: 'cover' }} />
+                            </div>
+                        </div>
+
+                        <div className="sub-services-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
+                            <div className="sub-service-card">
+                                <div className="card-icon-container"><Cpu size={24} className="text-primary" /></div>
+                                <h4>Enterprise Scalability</h4>
+                                <p>Robust systems designed to scale with your organizational growth.</p>
+                            </div>
+                            <div className="sub-service-card">
+                                <div className="card-icon-container"><Share2 size={24} className="text-primary" /></div>
+                                <h4>Process Optimization</h4>
+                                <p>End-to-end integration of departmental workflows and data silos.</p>
                             </div>
                         </div>
                     </div>

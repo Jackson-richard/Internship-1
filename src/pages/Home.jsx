@@ -12,8 +12,7 @@ import {
     Award,
     Zap,
     CheckCircle2,
-    Phone,
-    MessageCircle
+    Phone
 } from 'lucide-react';
 import '../styles/home.css';
 
@@ -80,7 +79,7 @@ export default function Home() {
             </Helmet>
 
             <div className="animate-fade-in">
-         
+
                 <section className="hero-section">
                     <div className="hero-bg-shapes">
                         <div className="shape-1"></div>
@@ -89,7 +88,22 @@ export default function Home() {
                     <div className="container">
                         <div className="hero-content">
                             <span className="hero-subtitle">KK International Pvt Ltd</span>
-                            <h1 className="h1" style={{ marginBottom: '1.5rem' }}>Technology Solutions That Move Your Business Forward</h1>
+                            <div className="hero-logo-container" style={{ margin: '2rem 0' }}>
+                                <img src="/assets/kk-international-logo.png" alt="KK International Logo" className="hero-animated-logo" style={{ height: '80px', width: 'auto', animation: 'subtleFloat 4s ease-in-out infinite' }} />
+                                <style>{`
+                                    @keyframes subtleFloat {
+                                        0% { transform: translateY(0) scale(1); opacity: 0.9; }
+                                        50% { transform: translateY(-8px) scale(1.02); opacity: 1; filter: drop-shadow(0 4px 8px rgba(255,255,255,0.2)); }
+                                        100% { transform: translateY(0) scale(1); opacity: 0.9; }
+                                    }
+                                    @media (prefers-reduced-motion: reduce) {
+                                        .hero-animated-logo { animation: none !important; }
+                                    }
+                                `}</style>
+                            </div>
+                            <h1 className="hero-heading" style={{ marginBottom: '1.5rem', fontWeight: 800, lineHeight: 1.1, fontSize: 'clamp(2.25rem, 4vw, 3.75rem)', maxWidth: '100%', wordBreak: 'break-word' }}>
+                                Technology Solutions<br />That Move Your Business<br />Forward
+                            </h1>
                             <p className="hero-desc">
                                 We operate at the intersection of global business and digital innovation, providing expert guidance in technology strategy, digital transformation, software solutions, and IT infrastructure.
                             </p>
@@ -97,7 +111,10 @@ export default function Home() {
                                 <Link to="/contact" className="btn btn-primary">
                                     Get a Quote <ArrowRight size={20} />
                                 </Link>
-                                <Link to="/services" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>
+                                <Link to="/warehouse-locations" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>
+                                    Warehouse Locations
+                                </Link>
+                                <Link to="/services" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.5)', color: 'white' }}>
                                     Explore Services
                                 </Link>
                             </div>
@@ -130,7 +147,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                
+
                 <section className="stats-section">
                     <div className="container">
                         <div className="stats-grid">
@@ -154,7 +171,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                
+
                 <section className="section section-bg-light">
                     <div className="container">
                         <div className="value-grid">
@@ -223,24 +240,20 @@ export default function Home() {
                     </div>
                 </section>
 
-               
-                <section className="cta-section">
+
+                <section className="cta-section" style={{ padding: '4rem 0' }}>
                     <div className="container">
-                        <div className="cta-content">
-                            <h2 className="h2" style={{ color: 'white' }}>Let's Build Something That Moves Your Business Forward</h2>
-                            <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.2rem', marginBottom: '2rem' }}>
-                                Ready to transform your digital infrastructure? Get in touch with our experts today.
-                            </p>
-                            <div className="cta-actions">
-                                <Link to="/contact" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>
+                        <div className="cta-content" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem', maxWidth: '100%' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                                <h2 className="h2" style={{ color: 'white', margin: 0, fontSize: '1.5rem' }}>Contact</h2>
+                                <a href="tel:+919884488747" style={{ color: 'white', fontSize: '1.5rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}>
+                                    <Phone size={24} /> +91 98844 88747
+                                </a>
+                            </div>
+                            <div className="cta-actions" style={{ margin: 0 }}>
+                                <Link to="/contact" className="btn btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)', padding: '0.75rem 2rem', fontSize: '1.1rem', minWidth: 'auto', borderRadius: 'var(--radius-md)' }}>
                                     Get a Quote
                                 </Link>
-                                <a href="tel:+919884488747" className="btn btn-outline" style={{ backgroundColor: 'white', color: 'var(--primary)' }}>
-                                    <Phone size={20} /> Call Us
-                                </a>
-                                <a href="https://wa.me/919884488747" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ backgroundColor: '#25D366' }}>
-                                    <MessageCircle size={20} /> WhatsApp
-                                </a>
                             </div>
                         </div>
                     </div>

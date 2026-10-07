@@ -78,9 +78,14 @@ export default function Testimonials() {
                             <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
                                 Are you ready to see how our targeted technology strategy and tailored solutions can impact your business?
                             </p>
-                            <Link to="/contact" className="btn btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)' }}>
-                                Get in touch today
-                            </Link>
+                            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                                <Link to="/contact" className="btn btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)' }}>
+                                    Get in touch today
+                                </Link>
+                                <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>
+                                    Share a Google Review
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>

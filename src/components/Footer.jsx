@@ -42,7 +42,6 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4 className="footer-heading">Our Services</h4>
                         <ul className="footer-links">
-                            <li><Link to="/services#web-development"><ChevronRight size={16} /> Web Development</Link></li>
                             <li><Link to="/services#app-development"><ChevronRight size={16} /> App Development</Link></li>
                             <li><Link to="/services#e-commerce"><ChevronRight size={16} /> E-Commerce Solutions</Link></li>
                             <li><Link to="/services#digital-marketing"><ChevronRight size={16} /> Digital Marketing</Link></li>
@@ -56,7 +55,7 @@ const Footer = () => {
                             <li>
                                 <MapPin size={20} className="contact-icon" />
                                 <span>
-                                    MIG 47, 1st St, Ramapuram,<br />
+                                    MIG 47, 1st Street<br />
                                     TNHB Colony, Velachery,<br />
                                     Chennai, Tamil Nadu 600042
                                 </span>

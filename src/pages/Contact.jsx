@@ -118,7 +118,7 @@ export default function Contact() {
                                     <div className="contact-card-content">
                                         <h4>Office Address</h4>
                                         <p>
-                                            MIG 47, 1st St, Ramapuram,<br />
+                                            MIG 47, 1st Street<br />
                                             TNHB Colony, Velachery,<br />
                                             Chennai, Tamil Nadu 600042
                                         </p>
@@ -182,7 +182,8 @@ export default function Contact() {
                                         <label className="form-label" htmlFor="service">Service Interested In *</label>
                                         <select id="service" name="service" className="form-select" value={formData.service} onChange={handleChange}>
                                             <option value="">Select a service...</option>
-                                            <option value="Web Development">Website Development</option>
+                                            <option value="Data Analytics">Data Analytics</option>
+                                            <option value="ERP / SAP">ERP / SAP Business Model</option>
                                             <option value="App Development">Mobile App Development</option>
                                             <option value="E-Commerce">E-Commerce Solutions</option>
                                             <option value="Digital Marketing">Digital Marketing & SEO</option>
@@ -217,7 +218,7 @@ export default function Contact() {
                     <div className="container">
                         <div className="map-container">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3533261294247!2d80.2185362!3d13.01314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526715f20612bb%3A0xe721dedbf9b8e2b5!2sRamapuram%2C%20TNHB%20Colony%2C%20Velachery%2C%20Chennai%2C%20Tamil%20Nadu%20600042%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3533261294247!2d80.2185362!3d13.01314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526715f20612bb%3A0xe721dedbf9b8e2b5!2sTNHB%20Colony%2C%20Velachery%2C%20Chennai%2C%20Tamil%20Nadu%20600042%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}

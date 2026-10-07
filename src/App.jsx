@@ -13,6 +13,7 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
+import WarehouseLocations from './pages/WarehouseLocations';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/warehouse-locations" element={<WarehouseLocations />} />
             </Routes>
           </main>
           <Footer />
