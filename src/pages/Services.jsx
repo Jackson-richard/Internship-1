@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
     Monitor, Smartphone, ShoppingCart, Megaphone, Package,
-    Code, Layout, Globe, Lock, LineChart, Cpu,
+    Code, Layout, Globe, Lock, LineChart,
     Share2, Search, Mail, Scan, Box, BarChart3, Database, TrendingUp
 } from 'lucide-react';
 import '../styles/services.css';
@@ -67,51 +67,6 @@ export default function Services() {
                     </div>
                 </section>
 
-                <section id="erp-sap" className="service-detail-section" style={{ backgroundColor: 'var(--bg-card)' }}>
-                    <div className="container">
-                        <style>{`
-                            .erp-main-grid {
-                                display: grid;
-                                grid-template-columns: 1.2fr 1fr;
-                                gap: clamp(2rem, 5vw, 4rem);
-                                align-items: center;
-                                margin-bottom: 3rem;
-                            }
-                            @media (max-width: 991px) {
-                                .erp-main-grid {
-                                    grid-template-columns: 1fr;
-                                }
-                            }
-                        `}</style>
-                        <div className="erp-main-grid">
-                            <div className="service-intro" style={{ position: 'static', marginBottom: 0 }}>
-                                <div className="service-intro-icon">
-                                    <Database size={32} />
-                                </div>
-                                <h2 className="h2" style={{ marginBottom: '1rem' }}>ERP / SAP Business Model</h2>
-                                <p className="text-muted" style={{ marginBottom: '2rem' }}>
-                                    Comprehensive enterprise resource planning solutions tailored to streamline operations, enhance cross-departmental data flow, and optimize core business processes.
-                                </p>
-                            </div>
-                            <div>
-                                <img src="/assets/images/erp_sap_system.png" alt="ERP SAP Business Model" style={{ width: '100%', height: 'auto', borderRadius: 'var(--radius-lg)', objectFit: 'cover' }} />
-                            </div>
-                        </div>
-
-                        <div className="sub-services-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
-                            <div className="sub-service-card">
-                                <div className="card-icon-container"><Cpu size={24} className="text-primary" /></div>
-                                <h4>Enterprise Scalability</h4>
-                                <p>Robust systems designed to scale with your organizational growth.</p>
-                            </div>
-                            <div className="sub-service-card">
-                                <div className="card-icon-container"><Share2 size={24} className="text-primary" /></div>
-                                <h4>Process Optimization</h4>
-                                <p>End-to-end integration of departmental workflows and data silos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
 
                 <section id="e-commerce" className="service-detail-section">

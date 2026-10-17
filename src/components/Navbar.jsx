@@ -67,12 +67,36 @@ const Navbar = () => {
                 )}
 
                 {isDesktop && (
-                    <div className="navbar-actions desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+                    <div className="navbar-actions desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 'clamp(0.5rem, 1vw, 1.25rem)' }}>
                         <a href="tel:+919884488747" className="nav-phone" style={{ whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                             <Phone size={18} />
                             <span>+91 98844 88747</span>
                         </a>
-                        <Link to="/contact" className="btn btn-primary" style={{ padding: '0.4rem 1.25rem', fontSize: '0.9rem', minWidth: 'auto' }}>Get a Quote</Link>
+                        <Link
+                            to="/warehouse-locations"
+                            className="btn btn-outline"
+                            style={{
+                                padding: '0.4rem clamp(0.6rem, 0.8vw, 1rem)',
+                                fontSize: 'clamp(0.8rem, 0.85vw, 0.9rem)',
+                                minWidth: 'auto',
+                                whiteSpace: 'nowrap'
+                            }}
+                        >
+                            Warehouse Locations
+                        </Link>
+                        <Link
+                            to="/contact"
+                            className="btn btn-primary"
+                            style={{
+                                padding: '0.4rem clamp(0.6rem, 0.8vw, 1rem)',
+                                fontSize: 'clamp(0.8rem, 0.85vw, 0.9rem)',
+                                minWidth: 'auto',
+                                whiteSpace: 'nowrap',
+                                border: '2px solid var(--secondary)'
+                            }}
+                        >
+                            Get a Quote
+                        </Link>
                     </div>
                 )}
 
@@ -99,6 +123,7 @@ const Navbar = () => {
                             ))}
                             <div className="mobile-nav-actions">
                                 <a href="tel:+919884488747" className="btn btn-outline" onClick={closeMenu}>Call Us</a>
+                                <Link to="/warehouse-locations" className="btn btn-outline" onClick={closeMenu}>Warehouse Locations</Link>
                                 <Link to="/contact" className="btn btn-primary" onClick={closeMenu}>Get a Quote</Link>
                             </div>
                         </nav>

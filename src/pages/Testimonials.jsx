@@ -82,7 +82,7 @@ export default function Testimonials() {
                                 <Link to="/contact" className="btn btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)' }}>
                                     Get in touch today
                                 </Link>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>
+                                <a href="https://share.google/f99uaQtrd0WO6pexz" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>
                                     Share a Google Review
                                 </a>
                             </div>

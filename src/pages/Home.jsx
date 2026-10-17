@@ -87,23 +87,7 @@ export default function Home() {
                     </div>
                     <div className="container">
                         <div className="hero-content">
-                            <span className="hero-subtitle">KK International Pvt Ltd</span>
-                            <div className="hero-logo-container" style={{ margin: '2rem 0' }}>
-                                <img src="/assets/kk-international-logo.png" alt="KK International Logo" className="hero-animated-logo" style={{ height: '80px', width: 'auto', animation: 'subtleFloat 4s ease-in-out infinite' }} />
-                                <style>{`
-                                    @keyframes subtleFloat {
-                                        0% { transform: translateY(0) scale(1); opacity: 0.9; }
-                                        50% { transform: translateY(-8px) scale(1.02); opacity: 1; filter: drop-shadow(0 4px 8px rgba(255,255,255,0.2)); }
-                                        100% { transform: translateY(0) scale(1); opacity: 0.9; }
-                                    }
-                                    @media (prefers-reduced-motion: reduce) {
-                                        .hero-animated-logo { animation: none !important; }
-                                    }
-                                `}</style>
-                            </div>
-                            <h1 className="hero-heading" style={{ marginBottom: '1.5rem', fontWeight: 800, lineHeight: 1.1, fontSize: 'clamp(2.25rem, 4vw, 3.75rem)', maxWidth: '100%', wordBreak: 'break-word' }}>
-                                Technology Solutions<br />That Move Your Business<br />Forward
-                            </h1>
+                            <h1 className="h1" style={{ marginBottom: '1.5rem' }}>Technology Solutions That Move Your Business Forward</h1>
                             <p className="hero-desc">
                                 We operate at the intersection of global business and digital innovation, providing expert guidance in technology strategy, digital transformation, software solutions, and IT infrastructure.
                             </p>
@@ -111,10 +95,7 @@ export default function Home() {
                                 <Link to="/contact" className="btn btn-primary">
                                     Get a Quote <ArrowRight size={20} />
                                 </Link>
-                                <Link to="/warehouse-locations" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>
-                                    Warehouse Locations
-                                </Link>
-                                <Link to="/services" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.5)', color: 'white' }}>
+                                <Link to="/services" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>
                                     Explore Services
                                 </Link>
                             </div>
